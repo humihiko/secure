@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z世代Youtuberの苦悩</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="title-screen">
+            <h1 id="game-title">Z世代Youtuberの苦悩</h1>
+            <button id="startButton" class="ui-button">はじめる</button>
+        </div>
+
+        <div id="intro-scene" style="display: none;">
+            <img id="intro-image" src="" alt="Intro Scene Image">
+            <div id="message-window">
+                <p id="intro-message"></p>
+            </div>
+            <div class="navigation-buttons">
+                <button id="prevButton" class="ui-button">←</button>
+                <button id="nextButton" class="ui-button">→</button>
+            </div>
+        </div>
+
+        <div id="main-game" style="display: none;">
+            <div id="status-bar-wrapper">
+                <button id="quitButton" class="ui-button">やめる</button>
+                <div id="status-bar">
+                    予算: <span id="budget-display">1,000,000</span> 円
+                </div>
+            </div>
+
+            <div id="event-display">
+                <img id="event-image" src="" alt="Event Image">
+                <p id="event-text"></p>
+            </div>
+
+            <div id="message-display">
+                <p id="message-text"></p>
+            </div>
+
+            <div id="choices-container">
+            </div>
+
+            <div id="result-display">
+                <p id="result-text"></p>
+            </div>
+        </div>
+
+        <div id="ending-scene" style="display: none;">
+            <img id="ending-image" src="" alt="Ending Scene Image">
+            <div id="message-window-ending">
+                <p id="ending-message"></p>
+            </div>
+            <div class="navigation-buttons">
+                <button id="endingPrevButton" class="ui-button">←</button>
+                <button id="endingNextButton" class="ui-button">→</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="mainBGM" src="audio/main_bgm.mp3" loop></audio>
+    <audio id="endingBGM" src="audio/ending_bgm.mp3" loop></audio>
+    <audio id="failSFX" src="audio/fail_sfx.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
